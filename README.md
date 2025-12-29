@@ -264,6 +264,75 @@ npm run cli -- history --limit 20
 npm run cli -- status
 ```
 
+### 💬 **Real Usage Examples**
+
+PokeBuddy showcases intelligent features that make chatting natural and forgiving:
+
+#### **1. Basic Pokémon Query**
+```
+You: Tell me about Pikachu
+🤖 PokeBuddy: Pikachu is an Electric-type Pokémon known for its iconic 
+yellow appearance and lightning bolt-shaped tail. It has a base stat total 
+of 320, with notable Special Attack (50) and Speed (90). Pikachu stores 
+electricity in its red cheek pouches and can unleash powerful electric 
+attacks like Thunderbolt. It evolves from Pichu with high friendship and 
+evolves into Raichu when exposed to a Thunder Stone.
+```
+
+#### **2. Smart Spelling Correction**
+The LLM automatically corrects typos and spelling mistakes:
+```
+You: tell me about ratata
+🤖 PokeBuddy: I think you meant Rattata! Rattata is a Normal-type Pokémon 
+with purple fur and large front teeth. It's known for being extremely 
+common in the Kanto region and evolves into Raticate at level 20...
+```
+
+#### **3. Random Pokémon Discovery**
+```
+You: show me a random pokemon
+🤖 PokeBuddy: Let me introduce you to Weezing! This Poison-type Pokémon 
+has two heads and floats by filling its body with toxic gases. Weezing has 
+a base stat total of 490 with high Defense (120) making it quite tanky. 
+It's known for its Levitate ability which gives it immunity to Ground-type 
+moves, despite its appearance...
+```
+
+#### **4. Battle Scenario Analysis**
+```
+You: who would win in a battle between charizard and blastoise?
+🤖 PokeBuddy: This is a classic rivalry! Blastoise has a significant type 
+advantage since Water is super effective against Fire/Flying types like 
+Charizard. Blastoise's Water-type attacks (like Hydro Pump) would deal 4x 
+damage to Charizard.
+
+However, Charizard has higher Speed (100 vs 78) and Special Attack (109 vs 
+85). If Charizard can land a Solar Beam (Grass-type), it could deal massive 
+damage to Blastoise. 
+
+In a typical battle: Blastoise wins 7/10 times due to type advantage, but 
+Charizard can win with proper move selection and strategy.
+```
+
+#### **5. Contextual Follow-up Questions**
+```
+You: What's Charizard's best moveset?
+🤖 PokeBuddy: For competitive battling, Charizard typically runs:
+• Flamethrower / Fire Blast - STAB Fire attack
+• Air Slash / Hurricane - STAB Flying attack  
+• Solar Beam - Coverage against Water/Rock types
+• Roost - Healing to increase longevity
+
+With its Mega Evolution forms (X and Y), the moveset changes significantly...
+
+You: What about for casual playthroughs?
+🤖 PokeBuddy: For in-game playthroughs, I'd recommend a simpler set:
+• Flamethrower - Reliable Fire STAB
+• Fly - Transportation + Flying STAB
+• Dragon Claw - Great coverage move
+• Earthquake / Brick Break - Coverage for Rock types
+```
+
 ### REST API
 
 Start the server:
@@ -453,33 +522,13 @@ export class PluginRegistry {
 *Why:* Catch regressions in user-facing interface  
 *Effort:* Small (1-2 days)
 
-### 🎨 **User Experience**
+### ️ **Infrastructure**
 
-#### **7. Conversation Context Window**
-*Current:* Limited context awareness  
-*Goal:* Maintain conversation history across queries  
-*Example:*
-  ```
-  You: Tell me about Pikachu
-  Bot: [Pikachu info]
-  You: How about its evolution?  ← Bot remembers "Pikachu"
-  Bot: Raichu evolves from Pikachu...
-  ```
-*Effort:* Medium (2-3 days)
-
-#### **8. Battle Simulation**
-*Current:* Intent classifier detects battles but doesn't simulate  
-*Goal:* Actual turn-based battle calculations  
-*Why:* Super cool feature, educational  
-*Effort:* Large (7-10 days)
-
-### 🏗️ **Infrastructure**
-
-#### **9. Docker Compose Setup**
+#### **7. Docker Compose Setup**
 *Goal:* One-command deployment with all dependencies  
 *Effort:* Small (1 day)
 
-#### **10. GitHub Actions CI/CD**
+#### **8. GitHub Actions CI/CD**
 *Goal:* Automated testing, building, deployment  
 *Effort:* Small (1-2 days)
 
