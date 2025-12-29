@@ -298,20 +298,57 @@ It's known for its Levitate ability which gives it immunity to Ground-type
 moves, despite its appearance...
 ```
 
-#### **4. Battle Scenario Analysis**
+#### **4. Battle Scenario Simulation**
 ```
-You: who would win in a battle between charizard and blastoise?
-🤖 PokeBuddy: This is a classic rivalry! Blastoise has a significant type 
-advantage since Water is super effective against Fire/Flying types like 
-Charizard. Blastoise's Water-type attacks (like Hydro Pump) would deal 4x 
-damage to Charizard.
+You: simulate a battle between charizard and blastoise
+🤖 PokeBuddy:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎮 POKEMON BATTLE SIMULATION 🎮
+Charizard vs Blastoise
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-However, Charizard has higher Speed (100 vs 78) and Special Attack (109 vs 
-85). If Charizard can land a Solar Beam (Grass-type), it could deal massive 
-damage to Blastoise. 
+**Turn 1:**
+Charizard strikes first with **Flamethrower**!
+🔥 Charizard unleashes a torrent of fire, engulfing Blastoise in flames!
+💥 SUPER EFFECTIVE!
+[Damage dealt]: 109 damage
+Blastoise HP: 79/79 ████████░░░░ (100%)
 
-In a typical battle: Blastoise wins 7/10 times due to type advantage, but 
-Charizard can win with proper move selection and strategy.
+**Turn 2:**
+Blastoise counters with **Hydro Pump**!
+💧 Blastoise blasts a powerful stream of water, aiming directly at Charizard!
+[Damage dealt]: 85 damage
+Charizard HP: 78/78 ████████░░░░ (100%)
+
+**Turn 3:**
+Charizard retaliates with **Air Slash**!
+🌪️ A gust of wind accompanies Charizard's wing attack, striking Blastoise!
+💥 Not very effective...
+[Damage dealt]: 42 damage
+Blastoise HP: 37/79 ████████░░░░ (46%)
+
+**Turn 4:**
+Blastoise uses **Ice Beam**!
+❄️ A chilling beam of ice shoots from Blastoise's cannons, freezing the air!
+💥 Not very effective...
+[Damage dealt]: 42 damage
+Charizard HP: 36/78 ████████░░░░ (46%)
+
+**Turn 5:**
+Charizard goes for **Flamethrower** again!
+🔥 A second wave of flames erupts from Charizard's mouth, scorching Blastoise!
+💥 SUPER EFFECTIVE!
+[Damage dealt]: 109 damage
+Blastoise HP: -72/79 ████████░░░░ (0%)
+
+**RESULT:**
+🏆 Charizard WINS! 🏆
+Charizard triumphed due to its type advantage and powerful moves, landing 
+critical hits with Flamethrower while Blastoise struggled to deal effective 
+damage! 🔥💪
+
+What an epic battle! Want to see another simulation or discuss more about 
+these Pokémon? 😊
 ```
 
 #### **5. Contextual Follow-up Questions**
