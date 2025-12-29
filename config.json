@@ -1,0 +1,22 @@
+{
+  "app": {
+    "name": "PokeBuddy",
+    "version": "1.0.0",
+    "description": "Pokemon Assistant with AI-powered features"
+  },
+  "pokemon": {
+    "maxTeamSize": 6,
+    "defaultGeneration": 1,
+    "supportedGenerations": [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  },
+  "llm": {
+    "maxTokens": 1000,
+    "temperature": 0.7,
+    "systemPrompt": "You are a Pokemon expert assistant. You help trainers with team building, battle strategies, and Pokemon knowledge. Be friendly, knowledgeable, and concise."
+  },
+  "api": {
+    "timeout": 10000,
+    "retries": 3,
+    "retryDelay": 1000
+  }
+}
